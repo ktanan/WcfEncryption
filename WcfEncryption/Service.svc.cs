@@ -270,6 +270,7 @@ namespace WcfEncryption
                     strRet = Marshal.PtrToStringAnsi(handleRet.AddrOfPinnedObject());
 
                     handleRet.Free();
+                    //handleRet.Free();
 
                 } // implicit call to lib.Dispose, which calls FreeLibrary.
 
